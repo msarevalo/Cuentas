@@ -96,6 +96,14 @@ session_start();
                     </select>
                 </td>
             </tr>
+            <tr>
+                <td>
+                    <label>Correo</label>
+                </td>
+                <td>
+                    <input type="email" id="correo" name="correo">
+                </td>
+            </tr>
         </table>
         <center><input type="submit" value="Crear Usuario"></center>
     </form>

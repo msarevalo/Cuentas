@@ -37,10 +37,14 @@ if (isset($_POST['cuenta'])){
     $ncue = $_POST['cuenta'];
 }
 
+if (isset($_POST['correo'])){
+    $ncorreo = $_POST['correo'];
+}
+
 $con = mysqli_connect("localhost", "manuel","scout950911", "cuentas");
 
 if ($npass == $cpass) {
-    $crearUsuario = mysqli_query($con, "INSERT INTO `users` (`user`, `pass`, `name`, `salary`, `user_type`) VALUES ('" . $nuser . "', '" . $npass . "', '" . $nname . "', '" . $nsal . "', '" . $ncue . "');");
+    $crearUsuario = mysqli_query($con, "INSERT INTO `users` (`user`, `pass`, `name`, `salary`, `user_type`, `email`) VALUES ('" . $nuser . "', '" . $npass . "', '" . $nname . "', '" . $nsal . "', '" . $ncue . "'," . $ncorreo . ");");
     if ($crearUsuario == 1){
         echo "<script>alert('El usuario " . $nuser . " fue creado con exito'); window.location.href='CrearUsuario.php'</script>";
     }else{
