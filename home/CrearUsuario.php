@@ -101,7 +101,7 @@ session_start();
                     <label>Correo</label>
                 </td>
                 <td>
-                    <input type="email" id="correo" name="correo">
+                    <input type="email" id="correo" name="correo" placeholder="Correo">
                 </td>
             </tr>
         </table>
