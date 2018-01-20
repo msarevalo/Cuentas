@@ -31,7 +31,7 @@ session_start();
             ?></li></strong>
         <em><li><a href="CrearUsuario.php">Crear Usuario</a></li>
         <li><a href="EditarUsuario.php">Editar Usuario</a></li>
-        <li><a onclick="">Eliminar Usuario</a></li>
+        <li><a href="EliminarUsuario.php">Eliminar Usuario</a></li>
         <li><a onclick="">Listar Usuarios</a></li>
         <li><a onclick="">Actualizar Mis Datos</a></li>
         <li><a onclick="">Mis Movimientos</a></li>

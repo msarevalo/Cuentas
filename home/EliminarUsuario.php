@@ -2,9 +2,10 @@
 /**
  * Created by PhpStorm.
  * User: Manuel
- * Date: 17/01/2018
- * Time: 12:27 AM
+ * Date: 20/01/2018
+ * Time: 5:51 PM
  */
+
 session_start();
 ?>
 <!DOCTYPE html>
@@ -32,32 +33,12 @@ session_start();
                 }
                 ?></li></strong>
         <em><li><a href="CrearUsuario.php">Crear Usuario</a></li>
-            <li><a style="background: brown" href="EditarUsuario.php">Editar Usuario</a></li>
-            <li><a href="EliminarUsuario.php">Eliminar Usuario</a></li>
+            <li><a href="EditarUsuario.php">Editar Usuario</a></li>
+            <li><a style="background: brown" onclick="">Eliminar Usuario</a></li>
             <li><a onclick="">Listar Usuarios</a></li>
             <li><a onclick="">Actualizar Mis Datos</a></li>
             <li><a onclick="">Mis Movimientos</a></li>
             <li><a onclick="">Simular Movimiento</a></li></em>
     </ul>
 </div>
-<div id="editar" name="editar">
-    <header>Editar Usuario</header>
-    <form method="post" autocomplete="off" action="consultar.php">
-        <table>
-            <tr>
-                <td>
-                    <label>Usuario:</label>
-                </td>
-                <td>
-                    <input type="text" placeholder="Usuario" id="auser" name="auser" required>
-                </td>
-            </tr>
-        </table>
-        <center><input type="submit" value="Buscar"></center>
-    </form>
-</div>
 </body>
-
-<div id="resultado" name="resultado" style="display: none">
-    <label>prueba</label>
-</div>
