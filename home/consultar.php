@@ -20,6 +20,7 @@ $aconsulta = mysqli_fetch_array($consulta);
 if ($aconsulta){
     if ($_SESSION['username'] != $auser) {
         echo "<script>window.location.href='Editar_Usuario.php'</script>";
+        $_SESSION['id'] = $aconsulta[0];
         $_SESSION['con_user'] = $aconsulta[1];
         $_SESSION['con_name'] = $aconsulta[3];
         $_SESSION['con_sal'] = $aconsulta[4];

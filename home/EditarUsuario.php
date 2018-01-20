@@ -40,7 +40,7 @@ session_start();
             <li><a onclick="">Simular Movimiento</a></li></em>
     </ul>
 </div>
-<div id="actualizar" name="actualizar">
+<div id="editar" name="editar">
     <header>Editar Usuario</header>
     <form method="post" autocomplete="off" action="consultar.php">
         <table>

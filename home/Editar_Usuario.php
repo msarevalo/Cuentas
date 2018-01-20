@@ -43,7 +43,7 @@ session_start();
 </div>
 <div id="Edicion" name="Edicion">
     <header><?php echo "Editar usuario: " . $_SESSION['con_user']?></header>
-    <form method="post" action="crear.php" autocomplete="off">
+    <form method="post" action="editar.php" autocomplete="off">
         <table>
             <tr>
                 <td>

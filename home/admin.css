@@ -140,17 +140,17 @@ input[type=submit]{
     height: 40px;
 }
 
-#actualizar{
+#editar{
     position: absolute;
-    top: 5%;
-    left: 40%;
+    top: 23%;
+    left: 38%;
     background-color: #dddddd;
     border-radius: 25px;
     width: 500px;
     height: 200px;
 }
 
-#actualizar header{
+#editar header{
     background-color: #3a7999;
     color: white;
     font-family: sans-serif;
@@ -162,15 +162,15 @@ input[type=submit]{
     border-radius: 25px 25px 0px 0px;
 }
 
-#actualizar table{
+#editar table{
     padding: 18px 100px;
 }
 
-#actualizar table td{
+#editar table td{
     padding: 10px 25px;
 }
 
-#actualizar button{
+#editar button{
     border: none;
     background-color: #3a7999;
     color: #f2f2f2;
