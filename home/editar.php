@@ -6,6 +6,8 @@
  * Time: 4:47 PM
  */
 
+session_start();
+
 if (isset($_POST['name'])){
     $nombre = $_POST['name'];
 }
@@ -26,5 +28,7 @@ $con = mysqli_connect("localhost", "manuel","scout950911", "cuentas");
 
 $editar = mysqli_query($con, "UPDATE `users` SET `name` = '" . $nombre . "', `salary` = '" . $salario . "', `user_type` = '" . $cuenta . "', `email` = '" . $correo . "' WHERE `users`.`id_user` = " . $_SESSION['id'] . ";");
 
-echo "<script>alert('" . $editar . "')";
-//echo "<script>alert('Usuario " . $_SESSION['con_user'] . "actualizado correctamente')";
+//echo "<script>alert('" . $editar . "')";
+echo "<script>alert('Usuario " . $_SESSION['con_user'] . " fue actualizado correctamente'); window.location.href='EditarUsuario.php'</script>";
+
+?>
