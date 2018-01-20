@@ -7,6 +7,7 @@
  */
 session_start();
 
+unset($nuser, $npass, $nname, $nsal, $ncue, $ncorreo);
 if (isset($_POST['newuser'])){
     $nuser = $_POST['newuser'];
 }

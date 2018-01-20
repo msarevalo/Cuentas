@@ -53,7 +53,11 @@ session_start();
                 </td>
             </tr>
         </table>
-        <center><input type="submit"></center>
+        <center><input type="submit" value="Buscar"></center>
     </form>
 </div>
 </body>
+
+<div id="resultado" name="resultado" style="display: none">
+    <label>prueba</label>
+</div>
