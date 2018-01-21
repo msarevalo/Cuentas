@@ -15,7 +15,7 @@
     <script type="text/javascript" src="logic.js"></script>
     <link rel="stylesheet" href="index.css" type="text/css" />
 </head>
-<body>
+<body onload="noVolver()">
 <div id="inicio" name="inicio">
     <form method="post" action="validar.php">
         <table>

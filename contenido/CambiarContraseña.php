@@ -44,6 +44,7 @@ session_start();
             <li><a style="background: brown" href="CambiarContraseña.php">Cambiar Contraseña</a></li>
             <li><a onclick="">Mis Movimientos</a></li>
             <li><a onclick="">Simular Movimiento</a></li></em>
+            <img style="display: block; cursor: pointer; margin: 15px 0px 0px 60px" src="../imagenes/logout%20(1).png" onclick="location.href='../inicio/index.php'">
     </ul>
 </div>
 <div id="cambiarContraseña" name="cambiarContraseña">
