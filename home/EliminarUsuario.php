@@ -41,4 +41,21 @@ session_start();
             <li><a onclick="">Simular Movimiento</a></li></em>
     </ul>
 </div>
+
+<div id="eliminar" name="eliminar">
+    <header>Eliminar Usuario</header>
+    <form method="post" autocomplete="off" action="eliminar.php">
+        <table>
+            <tr>
+                <td>
+                    <label>Usuario:</label>
+                </td>
+                <td>
+                    <input type="text" placeholder="Usuario" id="euser" name="euser" required>
+                </td>
+            </tr>
+        </table>
+        <center><input type="submit" value="Eliminar"></center>
+    </form>
+</div>
 </body>

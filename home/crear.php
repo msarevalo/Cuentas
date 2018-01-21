@@ -49,7 +49,7 @@ if ($npass == $cpass) {
     if ($crearUsuario == 1){
         echo "<script>alert('El usuario " . $nuser . " fue creado con exito'); window.location.href='CrearUsuario.php'</script>";
     }else{
-        echo "<script>alert('El usuario " . $nuser . " ya se encuentra registrado'); window.location.href='CrearUsuario.php'</script>";
+        echo "<script>alert('El usuario o correo ya se encuentra registrado'); window.location.href='CrearUsuario.php'</script>";
     }
     //echo $crearUsuario;
 }else{

@@ -57,7 +57,3 @@ session_start();
     </form>
 </div>
 </body>
-
-<div id="resultado" name="resultado" style="display: none">
-    <label>prueba</label>
-</div>
