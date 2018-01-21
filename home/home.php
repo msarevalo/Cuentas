@@ -1,13 +1,10 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Manuel
- * Date: 20/01/2018
- * Time: 7:14 PM
- */
-session_start();
-?>
 
+session_start();
+
+//echo "Hola " . $_SESSION['usuario'];
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,9 +32,9 @@ session_start();
         <em><?php
             if($_SESSION['sesion'] == "admin"){
                 echo "<li><a href=\"CrearUsuario.php\">Crear Usuario</a></li>
-            <li><a href=\"EditarUsuario.php\">Editar Usuario</a></li>
-            <li><a href=\"EliminarUsuario.php\">Eliminar Usuario</a></li>
-            <li><a style=\"background: brown\" href=\"ListarUsuarios.php\">Listar Usuarios</a></li>";
+                        <li><a href=\"EditarUsuario.php\">Editar Usuario</a></li>
+                        <li><a href=\"EliminarUsuario.php\">Eliminar Usuario</a></li>
+                        <li><a href=\"ListarUsuarios.php\">Listar Usuarios</a></li>";
             }
             ?>
             <li><a onclick="">Actualizar Mis Datos</a></li>
@@ -45,23 +42,9 @@ session_start();
             <li><a onclick="">Simular Movimiento</a></li></em>
     </ul>
 </div>
-<div id="listado" name="listado">
-    <header>Usuarios</header>
-    <?php
-    $con = mysqli_connect("localhost", "manuel","scout950911", "cuentas");
 
-    $consulta = mysqli_query($con,"SELECT `id_user`, `user`, `name`, `user_type`, `email` FROM `users`");
-    /*$lconsulta = mysqli_fetch_array($consulta);
-    $long = count($lconsulta);*/
-    echo "<table id='usuarios'><thead><tr><th>ID</th><th>Usuario</th><th>Nombre</th><th>Cuenta</th><th>Correo</th></tr></thead>";
-    while ($lconsulta = mysqli_fetch_array($consulta)){
-        echo "<tr>";
-        for ($i = 0; $i <= 4; $i++){
-            echo "<td>" . $lconsulta[$i] . "</td>";
-        }
-        echo "</tr>";
-    }
-    echo "</table>";
-    ?>
+
+<div id="bienvenida" style="display: block">
+    <img src="../imagenes/bienvenido.png" width="500">
 </div>
 </body>
