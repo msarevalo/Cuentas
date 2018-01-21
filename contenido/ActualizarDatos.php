@@ -1,15 +1,18 @@
 <?php
-
+/**
+ * Created by PhpStorm.
+ * User: Manuel
+ * Date: 20/01/2018
+ * Time: 7:14 PM
+ */
 session_start();
-
-//echo "Hola " . $_SESSION['usuario'];
-
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="admin.css" type="text/css" rel="stylesheet">
-    <script src="admin.js"></script>
+    <link href="../home/admin.css" type="text/css" rel="stylesheet">
+    <script src="../home/admin.js"></script>
     <meta charset="UTF-8">
     <?php
     echo "<title>Cuentas de " . $_SESSION['usuario'] . "</title>";
@@ -31,19 +34,15 @@ session_start();
                 ?></li></strong>
         <em><?php
             if($_SESSION['sesion'] == "admin"){
-                echo "<li><a href=\"CrearUsuario.php\">Crear Usuario</a></li>
-                        <li><a href=\"EditarUsuario.php\">Editar Usuario</a></li>
-                        <li><a href=\"EliminarUsuario.php\">Eliminar Usuario</a></li>
-                        <li><a href=\"ListarUsuarios.php\">Listar Usuarios</a></li>";
+                echo "<li><a href='../home/CrearUsuario.php'>Crear Usuario</a></li>
+                         <li><a href=\"../home/EditarUsuario.php\">Editar Usuario</a></li>
+                         <li><a href=\"../home/EliminarUsuario.php\">Eliminar Usuario</a></li>
+                         <li><a href=\"../home/ListarUsuarios.php\">Listar Usuarios</a></li>";
             }
             ?>
-            <li><a href="../contenido/ActualizarDatos.php">Actualizar Mis Datos</a></li>
+            <li><a style="background: brown" href="../contenido/ActualizarDatos.php">Actualizar Mis Datos</a></li>
             <li><a onclick="">Mis Movimientos</a></li>
             <li><a onclick="">Simular Movimiento</a></li></em>
     </ul>
 </div>
-
-
-<div id="bienvenida" style="display: block">
-    <img src="../imagenes/bienvenido.png" width="500">
-</div>
+</body>
