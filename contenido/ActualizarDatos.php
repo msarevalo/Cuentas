@@ -27,7 +27,7 @@ session_start();
             <li><?php echo "<lavel style='color: #ccc; padding: 10px 10px 10px 30px; text-decoration: none;text-transform: uppercase;'>Salario Base:</lavel>" ?></li>
             <li><?php
                 if ($_SESSION['salario']==null || $_SESSION['salario']==0){
-                    echo "<button type='button' style='padding: 3px 3px 3px 3px; margin: 10px'>Debes actualizar tus datos</button>";
+                    echo "<button type='button' style='padding: 3px 3px 3px 3px; margin: 10px' onclick=\"location.href='ActualizarDatos.php'\">Debes actualizar tus datos</button>";
                 }else{
                     echo "<lavel style='text-align: justify-all; color: #C6C87A; padding: 10px 10px 10px 50px; text-decoration: none;text-transform: uppercase;'>$ " . number_format($_SESSION['salario'],0,',','.') . "</lavel><br /><br /><br />";
                 }
@@ -44,5 +44,43 @@ session_start();
             <li><a onclick="">Mis Movimientos</a></li>
             <li><a onclick="">Simular Movimiento</a></li></em>
     </ul>
+</div>
+<div id="actualizar" name="actualizar">
+    <header>Actualizar mis Datos</header>
+    <form method="post" action="actualizar.php">
+        <table>
+            <tr>
+                <td>
+                    <label>Nombre</label>
+                </td>
+                <td>
+                    <?php
+                    echo "<input type='text' id='act_name' name='act_name' required value='" . $_SESSION['usuario'] . "'>"
+                    ?>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Salario</label>
+                </td>
+                <td>
+                    <?php
+                    echo "<input type='number' step='0.01' id='act_salario' name='act_salario' required value='" . $_SESSION['salario'] . "'>"
+                    ?>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Correo</label>
+                </td>
+                <td>
+                    <?php
+                    echo "<input type='email' id='act_correo' name='act_correo' required value='" . $_SESSION['e-mail'] . "'>"
+                    ?>
+                </td>
+            </tr>
+        </table>
+        <center><input type="submit" value="Actualizar"></center>
+    </form>
 </div>
 </body>

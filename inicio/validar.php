@@ -40,9 +40,11 @@ if ($con) {
         if ($respuesta[0][2] == $psw) {
             session_start();
             $_SESSION['username'] = $user;
+            $_SESSION['super-id'] = $respuesta[0][0];
             $_SESSION['sesion'] = $respuesta[0][5];
             $_SESSION['usuario'] = $respuesta[0][3];
             $_SESSION['salario'] = $respuesta[0][4];
+            $_SESSION['e-mail'] = $respuesta[0][6];
             if ($respuesta[0][5] == admin) {
                 header("Location: /Cuentas/home/home.php");
             } else {
