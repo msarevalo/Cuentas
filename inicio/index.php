@@ -1,12 +1,22 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Manuel
+ * Date: 20/01/2018
+ * Time: 11:41 PM
+ */
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Cuentas</title>
     <script type="text/javascript" src="logic.js"></script>
+    <link rel="stylesheet" href="index.css" type="text/css" />
 </head>
 <body>
-<center>
+<div id="inicio" name="inicio">
     <form method="post" action="validar.php">
         <table>
             <tr>
@@ -26,11 +36,11 @@
                 </td>
             </tr>
         </table>
-        <input type="checkbox" id="mostrar" onchange="mostrarContraseña()"> <label>Mostar contraseña</label>
+        <center><input type="checkbox" id="mostrar" onchange="mostrarContraseña()"><label>Mostar contraseña</label>
         <br />
-        <button type="submit">Inicar Sesion</button>
+        <input type="submit" value="Iniciar Sesion"><br /><br />
+        <a href="">Olvide mi contraseña</a><br /></center>
     </form>
-</center>
 </div>
 </body>
 </html>

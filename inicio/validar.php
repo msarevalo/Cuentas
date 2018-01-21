@@ -53,16 +53,16 @@ if ($con) {
 
         } else {
             //header("Location: index.html");
-            echo '<script language="javascript">alert("Contraseña incorrecta"); window.location.href="index.html"</script>';
+            echo '<script language="javascript">alert("Contraseña incorrecta"); window.location.href="index.php"</script>';
             exit();
         }
     } else {
         //header("Location: index.html");
-        echo '<script language="javascript">alert("Usuario inexistente"); window.location.href="index.html"</script>';
+        echo '<script language="javascript">alert("Usuario inexistente"); window.location.href="index.php"</script>';
         exit();
     }
 }
 else{
-    echo "<script>alert('Sin conexion a base de datos');window.location.href='index.html'</script>";
+    echo "<script>alert('Sin conexion a base de datos');window.location.href='index.php'</script>";
 }
 ?>

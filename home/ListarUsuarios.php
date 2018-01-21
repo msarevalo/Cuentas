@@ -41,6 +41,7 @@ session_start();
             }
             ?>
             <li><a href="../contenido/ActualizarDatos.php">Actualizar Mis Datos</a></li>
+            <li><a href="../contenido/CambiarContraseña.php">Cambiar Contraseña</a></li>
             <li><a onclick="">Mis Movimientos</a></li>
             <li><a onclick="">Simular Movimiento</a></li></em>
     </ul>
@@ -54,11 +55,18 @@ if ($_SESSION['sesion']=="admin"){
     $consulta = mysqli_query($con,"SELECT `id_user`, `user`, `name`, `user_type`, `email` FROM `users`");
     /*$lconsulta = mysqli_fetch_array($consulta);
     $long = count($lconsulta);*/
-    echo "<table id='usuarios'><thead><tr><th>ID</th><th>Usuario</th><th>Nombre</th><th>Cuenta</th><th>Correo</th></tr></thead>";
+    echo "<table id='usuarios'><thead><tr><th>ID</th><th>Usuario</th><th>Nombre</th><th>Tipo de Cuenta</th><th>Correo</th></tr></thead>";
     while ($lconsulta = mysqli_fetch_array($consulta)){
         echo "<tr>";
         for ($i = 0; $i <= 4; $i++){
-            echo "<td>" . $lconsulta[$i] . "</td>";
+            if ($lconsulta[$i] == "admin"){
+                echo "<td>Administrador</td>";
+            }elseif ($lconsulta[$i]=="user"){
+                echo "<td>Usuario Web</td>";
+            }else{
+                echo "<td>" . $lconsulta[$i] . "</td>";
+            }
+
         }
         echo "</tr>";
     }

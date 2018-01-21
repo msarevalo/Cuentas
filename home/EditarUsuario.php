@@ -40,6 +40,7 @@ session_start();
             }
             ?>
             <li><a href="../contenido/ActualizarDatos.php">Actualizar Mis Datos</a></li>
+            <li><a href="../contenido/CambiarContraseña.php">Cambiar Contraseña</a></li>
             <li><a onclick="">Mis Movimientos</a></li>
             <li><a onclick="">Simular Movimiento</a></li></em>
     </ul>

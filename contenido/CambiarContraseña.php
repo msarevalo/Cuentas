@@ -3,7 +3,7 @@
  * Created by PhpStorm.
  * User: Manuel
  * Date: 20/01/2018
- * Time: 7:14 PM
+ * Time: 11:06 PM
  */
 session_start();
 ?>
@@ -40,48 +40,34 @@ session_start();
                          <li><a href=\"../home/ListarUsuarios.php\">Listar Usuarios</a></li>";
             }
             ?>
-            <li><a style="background: brown" href="../contenido/ActualizarDatos.php">Actualizar Mis Datos</a></li>
-            <li><a href="CambiarContraseña.php">Cambiar Contraseña</a></li>
+            <li><a href="../contenido/ActualizarDatos.php">Actualizar Mis Datos</a></li>
+            <li><a style="background: brown" href="CambiarContraseña.php">Cambiar Contraseña</a></li>
             <li><a onclick="">Mis Movimientos</a></li>
             <li><a onclick="">Simular Movimiento</a></li></em>
     </ul>
 </div>
-<div id="actualizar" name="actualizar">
-    <header>Actualizar mis Datos</header>
-    <form method="post" action="actualizar.php">
+<div id="cambiarContraseña" name="cambiarContraseña">
+    <header>Cambiar Contraseña</header>
+    <form method="post" autocomplete="off" action="cambiar.php">
         <table>
             <tr>
                 <td>
-                    <label>Nombre</label>
+                    <label>Nueva Contraseña</label>
                 </td>
                 <td>
-                    <?php
-                    echo "<input type='text' id='act_name' name='act_name' required value='" . $_SESSION['usuario'] . "'>"
-                    ?>
+                    <input type="text" id="nuevaContraseña" name="nuevaContraseña" placeholder="Nueva Contraseña" required>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <label>Salario</label>
+                    <label>Confirmar Contraseña</label>
                 </td>
                 <td>
-                    <?php
-                    echo "<input type='number' step='0.01' id='act_salario' name='act_salario' required value='" . $_SESSION['salario'] . "'>"
-                    ?>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label>Correo</label>
-                </td>
-                <td>
-                    <?php
-                    echo "<input type='email' id='act_correo' name='act_correo' required value='" . $_SESSION['e-mail'] . "'>"
-                    ?>
+                    <input type="text" id="confContraseña" name="confContraseña" placeholder="Confirmar Contraseña" required>
                 </td>
             </tr>
         </table>
-        <center><input type="submit" value="Actualizar"></center>
+        <center><input type="submit" value="Cambiar"></center>
     </form>
 </div>
 </body>
