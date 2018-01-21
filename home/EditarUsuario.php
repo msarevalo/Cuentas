@@ -44,20 +44,30 @@ session_start();
             <li><a onclick="">Simular Movimiento</a></li></em>
     </ul>
 </div>
-<div id="editar" name="editar">
+
+<?php
+if ($_SESSION['sesion']=="admin"){
+    echo "<div id=\"editar\" name=\"editar\">
     <header>Editar Usuario</header>
-    <form method="post" autocomplete="off" action="consultar.php">
+    <form method=\"post\" autocomplete=\"off\" action=\"consultar.php\">
         <table>
             <tr>
                 <td>
                     <label>Usuario:</label>
                 </td>
                 <td>
-                    <input type="text" placeholder="Usuario" id="auser" name="auser" required>
+                    <input type=\"text\" placeholder=\"Usuario\" id=\"auser\" name=\"auser\" required>
                 </td>
             </tr>
         </table>
-        <center><input type="submit" value="Buscar"></center>
+        <center><input type=\"submit\" value=\"Buscar\"></center>
     </form>
-</div>
+</div>";
+}else{
+    echo "<div id=\"bienvenida\" style=\"display: block\">
+            <img src=\"../imagenes/bienvenido.png\" width=\"500\">
+            </div>";
+}
+?>
+
 </body>

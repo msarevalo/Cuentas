@@ -45,16 +45,19 @@ session_start();
             <li><a onclick="">Simular Movimiento</a></li></em>
     </ul>
 </div>
-<div id="Edicion" name="Edicion">
-    <header><?php echo "Editar usuario: " . $_SESSION['con_user']?></header>
-    <form method="post" action="editar.php" autocomplete="off">
+
+<?php
+if ($_SESSION['sesion']=="admin"){
+    echo "<div id=\"Edicion\" name=\"Edicion\">
+    <header>Editar usuario: " . $_SESSION['con_user'] . "</header>
+    <form method=\"post\" action=\"editar.php\" autocomplete=\"off\">
         <table>
             <tr>
                 <td>
                     <label>Nombres</label>
                 </td>
                 <td>
-                    <?php echo "<input type='text' id='name' name='name' placeholder='Nombres Usuario' required value='" . $_SESSION['con_name'] . "'>"?>
+                    <input type='text' id='name' name='name' placeholder='Nombres Usuario' required value='" . $_SESSION['con_name'] . "'>
                 </td>
             </tr>
             <tr>
@@ -62,15 +65,14 @@ session_start();
                     <label>Salario</label>
                 </td>
                 <td>
-                    <?php echo "<input type='number' id='salario' name='salario' placeholder='Salario' value='" . $_SESSION['con_sal'] . "'>"?>
+                    <input type='number' id='salario' name='salario' placeholder='Salario' value='" . $_SESSION['con_sal'] . "'>
                 </td>
             </tr>
             <tr>
                 <td>
                     <label>Perfil</label>
                 </td>
-                <td>
-                    <?php
+                <td>";
                         if ($_SESSION['con_perf'] == "admin"){
                             echo "<select id='cuenta' name='cuenta'>
                                     <option value='admin' selected='selected'>Administrador</option>
@@ -82,19 +84,25 @@ session_start();
                                     <option value='user' selected='selected'>Usuario Web</option>
                                   </select>";
                         }
-                    ?>
-                </td>
+                echo "</td>
             </tr>
             <tr>
                 <td>
                     <label>Correo</label>
                 </td>
                 <td>
-                    <?php echo "<input type='email' id='correo' name='correo' placeholder='Correo' value='" . $_SESSION['con_mail'] . "'>"?>
+                    <input type='email' id='correo' name='correo' placeholder='Correo' value='" . $_SESSION['con_mail'] . "'>
                 </td>
             </tr>
         </table>
-        <center><input type="submit" value="Editar Usuario"></center>
+        <center><input type=\"submit\" value=\"Editar Usuario\"></center>
     </form>
-</div>
+</div>";
+}else{
+    echo "<div id=\"bienvenida\" style=\"display: block\">
+            <img src=\"../imagenes/bienvenido.png\" width=\"500\">
+            </div>";
+}
+?>
+
 </body>

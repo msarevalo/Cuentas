@@ -45,11 +45,12 @@ session_start();
             <li><a onclick="">Simular Movimiento</a></li></em>
     </ul>
 </div>
-<div id="listado" name="listado">
-    <header>Usuarios</header>
-    <?php
-    $con = mysqli_connect("localhost", "manuel","scout950911", "cuentas");
 
+<?php
+if ($_SESSION['sesion']=="admin"){
+    echo "<div id=\"listado\" name=\"listado\">
+    <header>Usuarios</header>";
+    $con = mysqli_connect("localhost", "manuel","scout950911", "cuentas");
     $consulta = mysqli_query($con,"SELECT `id_user`, `user`, `name`, `user_type`, `email` FROM `users`");
     /*$lconsulta = mysqli_fetch_array($consulta);
     $long = count($lconsulta);*/
@@ -61,7 +62,13 @@ session_start();
         }
         echo "</tr>";
     }
-    echo "</table>";
-    ?>
-</div>
+    echo "</table>
+</div>";
+}else{
+    echo "<div id=\"bienvenida\" style=\"display: block\">
+            <img src=\"../imagenes/bienvenido.png\" width=\"500\">
+            </div>";
+}
+?>
+
 </body>

@@ -46,20 +46,29 @@ session_start();
     </ul>
 </div>
 
-<div id="eliminar" name="eliminar">
+<?php
+if ($_SESSION['sesion']=="admin"){
+    echo "<div id=\"eliminar\" name=\"eliminar\">
     <header>Eliminar Usuario</header>
-    <form method="post" autocomplete="off" action="eliminar.php">
+    <form method=\"post\" autocomplete=\"off\" action=\"eliminar.php\">
         <table>
             <tr>
                 <td>
                     <label>Usuario:</label>
                 </td>
                 <td>
-                    <input type="text" placeholder="Usuario" id="euser" name="euser" required>
+                    <input type=\"text\" placeholder=\"Usuario\" id=\"euser\" name=\"euser\" required>
                 </td>
             </tr>
         </table>
-        <center><input type="submit" value="Eliminar"></center>
+        <center><input type=\"submit\" value=\"Eliminar\"></center>
     </form>
-</div>
+</div>";
+}else{
+    echo "<div id=\"bienvenida\" style=\"display: block\">
+            <img src=\"../imagenes/bienvenido.png\" width=\"500\">
+            </div>";
+}
+?>
+
 </body>

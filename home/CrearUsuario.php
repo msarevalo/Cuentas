@@ -45,16 +45,18 @@ session_start();
     </ul>
 </div>
 
-<div id="crear" name="crear">
+<?php
+if ($_SESSION['salario']=="admin"){
+  echo "<div id=\"crear\" name=\"crear\">
     <header>Crear Usuario:</header>
-    <form method="post" action="crear.php" autocomplete="off">
+    <form method=\"post\" action=\"crear.php\" autocomplete=\"off\">
         <table>
             <tr>
                 <td>
                     <label>Usuario:</label>
                 </td>
                 <td>
-                    <input type="text" id="newuser" name="newuser" placeholder="Usuario" required>
+                    <input type=\"text\" id=\"newuser\" name=\"newuser\" placeholder=\"Usuario\" required>
                 </td>
             </tr>
             <tr>
@@ -62,7 +64,7 @@ session_start();
                     <label>Contraseña</label>
                 </td>
                 <td>
-                    <input type="text" id="newpass" name="newpass" placeholder="Contraseña" required>
+                    <input type=\"text\" id=\"newpass\" name=\"newpass\" placeholder=\"Contraseña\" required>
                 </td>
             </tr>
             <tr>
@@ -70,7 +72,7 @@ session_start();
                     <label>Confirmar Contraseña</label>
                 </td>
                 <td>
-                    <input type="text" id="conpass" name="conpass" placeholder="Contfirmar Contraseña" required>
+                    <input type=\"text\" id=\"conpass\" name=\"conpass\" placeholder=\"Contfirmar Contraseña\" required>
                 </td>
             </tr>
             <tr>
@@ -78,7 +80,7 @@ session_start();
                     <label>Nombres</label>
                 </td>
                 <td>
-                    <input type="text" id="name" name="name" placeholder="Nombres Usuario" required>
+                    <input type=\"text\" id=\"name\" name=\"name\" placeholder=\"Nombres Usuario\" required>
                 </td>
             </tr>
             <tr>
@@ -86,7 +88,7 @@ session_start();
                     <label>Salario</label>
                 </td>
                 <td>
-                    <input type="number" id="salario" name="salario" placeholder="Salario">
+                    <input type=\"number\" id=\"salario\" name=\"salario\" placeholder=\"Salario\">
                 </td>
             </tr>
             <tr>
@@ -94,9 +96,9 @@ session_start();
                     <label>Perfil</label>
                 </td>
                 <td>
-                    <select id="cuenta" name="cuenta">
-                        <option value="admin">Administrador</option>
-                        <option value="user" selected="selected">Usuario Web</option>
+                    <select id=\"cuenta\" name=\"cuenta\">
+                        <option value=\"admin\">Administrador</option>
+                        <option value=\"user\" selected=\"selected\">Usuario Web</option>
                     </select>
                 </td>
             </tr>
@@ -105,11 +107,17 @@ session_start();
                     <label>Correo</label>
                 </td>
                 <td>
-                    <input type="email" id="correo" name="correo" placeholder="Correo" required>
+                    <input type=\"email\" id=\"correo\" name=\"correo\" placeholder=\"Correo\" required>
                 </td>
             </tr>
         </table>
-        <center><input type="submit" value="Crear Usuario"></center>
+        <center><input type=\"submit\" value=\"Crear Usuario\"></center>
     </form>
-</div>
+</div>";
+}else{
+    echo "<div id=\"bienvenida\" style=\"display: block\">
+            <img src=\"../imagenes/bienvenido.png\" width=\"500\">
+            </div>";
+}
+?>
 </body>
