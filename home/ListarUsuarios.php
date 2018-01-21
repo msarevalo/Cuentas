@@ -3,11 +3,11 @@
  * Created by PhpStorm.
  * User: Manuel
  * Date: 20/01/2018
- * Time: 5:51 PM
+ * Time: 7:14 PM
  */
-
 session_start();
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,28 +34,11 @@ session_start();
                 ?></li></strong>
         <em><li><a href="CrearUsuario.php">Crear Usuario</a></li>
             <li><a href="EditarUsuario.php">Editar Usuario</a></li>
-            <li><a style="background: brown" href="EliminarUsuario.php">Eliminar Usuario</a></li>
-            <li><a href="ListarUsuarios.php">Listar Usuarios</a></li>
+            <li><a href="EliminarUsuario.php">Eliminar Usuario</a></li>
+            <li><a style="background: brown" href="ListarUsuarios.php">Listar Usuarios</a></li>
             <li><a onclick="">Actualizar Mis Datos</a></li>
             <li><a onclick="">Mis Movimientos</a></li>
             <li><a onclick="">Simular Movimiento</a></li></em>
     </ul>
-</div>
-
-<div id="eliminar" name="eliminar">
-    <header>Eliminar Usuario</header>
-    <form method="post" autocomplete="off" action="eliminar.php">
-        <table>
-            <tr>
-                <td>
-                    <label>Usuario:</label>
-                </td>
-                <td>
-                    <input type="text" placeholder="Usuario" id="euser" name="euser" required>
-                </td>
-            </tr>
-        </table>
-        <center><input type="submit" value="Eliminar"></center>
-    </form>
 </div>
 </body>
