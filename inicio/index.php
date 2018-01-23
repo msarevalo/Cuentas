@@ -39,7 +39,7 @@
         <center><input type="checkbox" id="mostrar" onchange="mostrarContraseña()"><label>Mostar contraseña</label>
         <br />
         <input type="submit" value="Iniciar Sesion"><br /><br />
-        <a href="">Olvide mi contraseña</a><br /></center>
+        <a href="rememberPass.php">Olvide mi contraseña</a><br /></center>
     </form>
 </div>
 </body>
