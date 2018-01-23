@@ -18,14 +18,14 @@ session_start();
 <body>
 <div id="remember" name="remember">
     <header>Olvidé mi contraseña</header>
-    <form>
+    <form method="post" action="enviar.php">
         <table>
             <tr>
                 <td>
                     <label>Usuario</label>
                 </td>
                 <td>
-                    <input type="text" placeholder="Usuario" required>
+                    <input type="text" placeholder="Usuario" id="usuario" name="usuario" required>
                 </td>
             </tr>
         </table>

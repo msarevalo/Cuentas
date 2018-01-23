@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c3b9e249-b0b1-495b-8e13-9bef54c6cc5a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/inicio/index.css" afterPath="$PROJECT_DIR$/inicio/index.css" />
-      <change beforePath="$PROJECT_DIR$/inicio/index.php" afterPath="$PROJECT_DIR$/inicio/index.php" />
+      <change beforePath="$PROJECT_DIR$/inicio/rememberPass.php" afterPath="$PROJECT_DIR$/inicio/rememberPass.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,7 +24,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/inicio/index.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="175">
@@ -39,7 +38,7 @@
         <entry file="file://$PROJECT_DIR$/home/admin.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="362">
-              <caret line="165" column="21" lean-forward="true" selection-start-line="165" selection-start-column="21" selection-end-line="165" selection-end-column="21" />
+              <caret line="165" column="21" lean-forward="false" selection-start-line="165" selection-start-column="21" selection-end-line="165" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -48,9 +47,33 @@
       <file leaf-file-name="rememberPass.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/inicio/rememberPass.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="447">
-              <caret line="33" column="10" lean-forward="false" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
+            <state relative-caret-position="328">
+              <caret line="27" column="87" lean-forward="false" selection-start-line="27" selection-start-column="87" selection-end-line="27" selection-end-column="87" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="enviar.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/inicio/enviar.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="31" column="14" lean-forward="false" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+              <folding>
+                <element signature="e#92#121#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="validar.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/inicio/validar.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="464">
+              <caret line="60" column="8" lean-forward="true" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="117" />
+              <folding>
+                <marker date="1516509793094" expanded="true" signature="553:608" ph="SELECT * FRO... users" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -109,8 +132,9 @@
         <option value="$PROJECT_DIR$/home/ListarUsuarios.php" />
         <option value="$PROJECT_DIR$/inicio/index.php" />
         <option value="$PROJECT_DIR$/home/admin.css" />
-        <option value="$PROJECT_DIR$/inicio/rememberPass.php" />
         <option value="$PROJECT_DIR$/inicio/index.css" />
+        <option value="$PROJECT_DIR$/inicio/rememberPass.php" />
+        <option value="$PROJECT_DIR$/inicio/enviar.php" />
       </list>
     </option>
   </component>
@@ -247,16 +271,15 @@
       <workItem from="1516414122330" duration="299000" />
       <workItem from="1516461674329" duration="38740000" />
       <workItem from="1516557721548" duration="317000" />
-      <workItem from="1516664447893" duration="1533000" />
+      <workItem from="1516664447893" duration="5796000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104763000" />
+    <option name="totallyTimeSpent" value="109026000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -290,7 +313,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/home/admin.php" />
     <entry file="file://$PROJECT_DIR$/home/admin.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1479">
@@ -428,13 +450,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/inicio/index.html" />
-    <entry file="file://$PROJECT_DIR$/inicio/validar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/inicio/logic.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -665,15 +680,7 @@
     <entry file="file://$PROJECT_DIR$/home/admin.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="362">
-          <caret line="165" column="21" lean-forward="true" selection-start-line="165" selection-start-column="21" selection-end-line="165" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inicio/rememberPass.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="33" column="10" lean-forward="false" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
+          <caret line="165" column="21" lean-forward="false" selection-start-line="165" selection-start-column="21" selection-end-line="165" selection-end-column="21" />
           <folding />
         </state>
       </provider>
@@ -683,6 +690,34 @@
         <state relative-caret-position="175">
           <caret line="55" column="14" lean-forward="false" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inicio/rememberPass.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="27" column="87" lean-forward="false" selection-start-line="27" selection-start-column="87" selection-end-line="27" selection-end-column="87" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inicio/validar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="60" column="8" lean-forward="true" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="117" />
+          <folding>
+            <marker date="1516509793094" expanded="true" signature="553:608" ph="SELECT * FRO... users" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inicio/enviar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="31" column="14" lean-forward="false" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+          <folding>
+            <element signature="e#92#121#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
