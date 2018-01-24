@@ -15,6 +15,14 @@ else{
     echo "fallo";
 }
 
+if(isset($_GET['usuario'])){
+    $user2 = $_GET['usuario'];
+    //echo $user;
+}
+else{
+    echo "fallo";
+}
+
 if(isset($_POST['pass'])){
     $psw = $_POST['pass'];
     //echo $psw;
@@ -23,6 +31,13 @@ else{
     echo "fallo";
 }
 
+if(isset($_GET['pass'])){
+    $psw2 = $_GET['pass'];
+    //echo $psw;
+}
+else{
+    echo "fallo";
+}
 
 $con = mysqli_connect("localhost", "manuel","scout950911", "cuentas");
 
@@ -58,8 +73,8 @@ if ($con) {
         }
     } else {
         //header("Location: index.html");
-        echo '<script language="javascript">alert("Usuario inexistente"); window.location.href="index.php"</script>';
-        exit();
+        /*echo '<script language="javascript">alert("Usuario inexistente"); window.location.href="index.php"</script>';
+        exit();*/
     }
 }
 else{

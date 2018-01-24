@@ -18,7 +18,7 @@ session_start();
 <body>
 <div id="remember" name="remember">
     <header>Olvidé mi contraseña</header>
-    <form method="post" action="enviar.php">
+    <form method="post" action="enviar.php" autocomplete="off">
         <table>
             <tr>
                 <td>
