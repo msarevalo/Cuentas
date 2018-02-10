@@ -12,7 +12,7 @@ if(isset($_POST['usuario'])){
     //echo $user;
 }
 else{
-    echo "fallo";
+    //echo "fallo user";
 }
 
 if(isset($_GET['usuario'])){
@@ -28,7 +28,7 @@ if(isset($_POST['pass'])){
     //echo $psw;
 }
 else{
-    echo "fallo";
+    //echo "fallo pass";
 }
 
 if(isset($_GET['pass'])){
@@ -72,9 +72,22 @@ if ($con) {
             exit();
         }
     } else {
-        //header("Location: index.html");
-        /*echo '<script language="javascript">alert("Usuario inexistente"); window.location.href="index.php"</script>';
-        exit();*/
+        $resultado = mysqli_query($con, "SELECT * FROM `users` WHERE `user` LIKE '" . $user2 . "'");
+        $respuesta = mysqli_fetch_all($resultado);
+        if ($respuesta){
+            if ($respuesta[0][7] == $psw2){
+                session_start();
+                $_SESSION['username'] = $user;
+                $_SESSION['super-id'] = $respuesta[0][0];
+                $_SESSION['sesion'] = $respuesta[0][5];
+                $_SESSION['usuario'] = $respuesta[0][3];
+                $_SESSION['salario'] = $respuesta[0][4];
+                $_SESSION['e-mail'] = $respuesta[0][6];
+                header("Location: /Cuentas/inicio/NewPassword.php");
+            }else{
+                echo "<script>alert('Esta sesion ya fue caducada');window.location.href='cerrar.php'</script>";
+            }
+        }
     }
 }
 else{

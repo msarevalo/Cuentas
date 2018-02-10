@@ -10,12 +10,13 @@ session_start();
 <head>
     <link href="admin.css" type="text/css" rel="stylesheet">
     <script src="admin.js"></script>
+    <script src="../inicio/logic.js"></script>
     <meta charset="UTF-8">
     <?php
     echo "<title>Cuentas de " . $_SESSION['usuario'] . "</title>";
     ?>
 </head>
-<body>
+<body onload="noVolver()">
 <div id="menu" name="menu" style="min-height: 100vh">
     <ul class="horizontal">
         <strong>
