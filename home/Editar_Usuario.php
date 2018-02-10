@@ -21,6 +21,11 @@ session_start();
 <body>
 <div id="menu" name="menu" style="min-height: 100vh">
     <ul class="horizontal">
+        <?php
+        if($_SESSION['username'] == null){
+            header("Location: /Cuentas/inicio/cerrar.php");
+        }
+        ?>
         <strong>
             <br /><li><?php echo "<label style='color: #ccc; padding: 10px 10px 10px 50px; text-decoration: none;text-transform: uppercase;'>Usuario:</label>"?></li>
             <li><?php echo "<label style='display: block; text-align: justify-all; padding: 10px 10px 10px 50px; color: #C6C87A; text-decoration: none;text-transform: uppercase;'>" . $_SESSION['usuario'] . "</label>"?></li>
