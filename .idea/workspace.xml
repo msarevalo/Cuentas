@@ -3,78 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="c3b9e249-b0b1-495b-8e13-9bef54c6cc5a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/composer.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" afterPath="" />
       <change beforePath="$PROJECT_DIR$/contenido/cambiar.php" afterPath="$PROJECT_DIR$/contenido/cambiar.php" />
-      <change beforePath="$PROJECT_DIR$/home/home.php" afterPath="$PROJECT_DIR$/home/home.php" />
-      <change beforePath="$PROJECT_DIR$/inicio/correo.php" afterPath="$PROJECT_DIR$/inicio/correo.php" />
+      <change beforePath="$PROJECT_DIR$/home/crear.php" afterPath="$PROJECT_DIR$/home/crear.php" />
       <change beforePath="$PROJECT_DIR$/inicio/validar.php" afterPath="$PROJECT_DIR$/inicio/validar.php" />
-      <change beforePath="$PROJECT_DIR$/vendor/autoload.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/LICENSE" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_real.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/LICENSE" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/SECURITY.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/VERSION" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/get_oauth_token.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-am.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-ar.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-az.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-ba.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-be.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-bg.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-ca.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-ch.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-cs.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-da.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-de.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-el.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-eo.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-es.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-et.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-fa.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-fi.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-fo.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-fr.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-gl.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-he.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-hr.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-hu.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-id.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-it.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-ja.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-ka.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-ko.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-lt.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-lv.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-ms.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-nb.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-nl.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-pl.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-pt.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-pt_br.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-ro.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-rs.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-ru.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-sk.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-sl.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-sv.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-tr.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-uk.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-vi.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-zh.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-zh_cn.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/src/Exception.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/src/OAuth.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/src/PHPMailer.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/src/POP3.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/src/SMTP.php" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -106,7 +37,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="home.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/home/home.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="365">
@@ -122,12 +53,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rememberPass.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/inicio/rememberPass.php">
+      <file leaf-file-name="crear.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/home/crear.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="61" lean-forward="false" selection-start-line="20" selection-start-column="61" selection-end-line="20" selection-end-column="61" />
-              <folding />
+            <state relative-caret-position="328">
+              <caret line="50" column="8" lean-forward="false" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="8" />
+              <folding>
+                <marker date="1518265782577" expanded="true" signature="912:1125" ph="INSERT INTO `users`... " />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -177,11 +110,11 @@
       <file leaf-file-name="validar.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/inicio/validar.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1479">
-              <caret line="87" column="99" lean-forward="false" selection-start-line="87" selection-start-column="99" selection-end-line="87" selection-end-column="99" />
+            <state relative-caret-position="935">
+              <caret line="55" column="43" lean-forward="false" selection-start-line="55" selection-start-column="43" selection-end-line="55" selection-end-column="43" />
               <folding>
-                <marker date="1517768701543" expanded="true" signature="772:827" ph="SELECT * FRO... users" />
-                <marker date="1517768701543" expanded="true" signature="1827:1883" ph="SELECT * FRO... users" />
+                <marker date="1518266629129" expanded="true" signature="776:831" ph="SELECT * FRO... users" />
+                <marker date="1518266629129" expanded="true" signature="1873:1929" ph="SELECT * FRO... users" />
               </folding>
             </state>
           </provider>
@@ -200,14 +133,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cambiar.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="cambiar.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/contenido/cambiar.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
-              <caret line="23" column="131" lean-forward="false" selection-start-line="23" selection-start-column="131" selection-end-line="23" selection-end-column="131" />
+              <caret line="23" column="73" lean-forward="false" selection-start-line="23" selection-start-column="73" selection-end-line="23" selection-end-column="73" />
               <folding>
-                <marker date="1517768376922" expanded="true" signature="409:480" ph="UPDATE `users`... " />
-                <marker date="1517768376922" expanded="true" signature="548:612" ph="UPDATE `users`... " />
+                <marker date="1518266286493" expanded="true" signature="462:533" ph="UPDATE `users`... " />
+                <marker date="1518266286493" expanded="true" signature="601:665" ph="UPDATE `users`... " />
               </folding>
             </state>
           </provider>
@@ -248,7 +181,6 @@
         <option value="$PROJECT_DIR$/home/contenido.php" />
         <option value="$PROJECT_DIR$/home/editar.php" />
         <option value="$PROJECT_DIR$/home/consultar.php" />
-        <option value="$PROJECT_DIR$/home/crear.php" />
         <option value="$PROJECT_DIR$/home/admin.js" />
         <option value="$PROJECT_DIR$/home/eliminar.php" />
         <option value="$PROJECT_DIR$/home/admin.php" />
@@ -272,9 +204,10 @@
         <option value="$PROJECT_DIR$/vendor/autoload.php" />
         <option value="C:/xampp/php/pear/autoload.php" />
         <option value="$PROJECT_DIR$/inicio/correo.php" />
+        <option value="$PROJECT_DIR$/home/home.php" />
+        <option value="$PROJECT_DIR$/home/crear.php" />
         <option value="$PROJECT_DIR$/contenido/cambiar.php" />
         <option value="$PROJECT_DIR$/inicio/validar.php" />
-        <option value="$PROJECT_DIR$/home/home.php" />
       </list>
     </option>
   </component>
@@ -427,12 +360,12 @@
       <workItem from="1517757797398" duration="3826000" />
       <workItem from="1517969553782" duration="50000" />
       <workItem from="1517969628618" duration="294000" />
-      <workItem from="1518264676114" duration="145000" />
+      <workItem from="1518264676114" duration="2211000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="134384000" />
+    <option name="totallyTimeSpent" value="136450000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -545,13 +478,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home/crear.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="47" column="60" lean-forward="true" selection-start-line="47" selection-start-column="60" selection-end-line="47" selection-end-column="127" />
         </state>
       </provider>
     </entry>
@@ -693,28 +619,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/contenido/cambiar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="23" column="131" lean-forward="false" selection-start-line="23" selection-start-column="131" selection-end-line="23" selection-end-column="131" />
-          <folding>
-            <marker date="1517768376922" expanded="true" signature="409:480" ph="UPDATE `users`... " />
-            <marker date="1517768376922" expanded="true" signature="548:612" ph="UPDATE `users`... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inicio/validar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1479">
-          <caret line="87" column="99" lean-forward="false" selection-start-line="87" selection-start-column="99" selection-end-line="87" selection-end-column="99" />
-          <folding>
-            <marker date="1517768701543" expanded="true" signature="772:827" ph="SELECT * FRO... users" />
-            <marker date="1517768701543" expanded="true" signature="1827:1883" ph="SELECT * FRO... users" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/inicio/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -741,6 +645,38 @@
             <marker date="1517769507863" expanded="true" signature="930:1021" ph="..." />
             <marker date="1517769507863" expanded="true" signature="1207:1245" ph="..." />
             <marker date="1517769507863" expanded="true" signature="1409:1528" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inicio/validar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="55" column="43" lean-forward="false" selection-start-line="55" selection-start-column="43" selection-end-line="55" selection-end-column="43" />
+          <folding>
+            <marker date="1518266629129" expanded="true" signature="776:831" ph="SELECT * FRO... users" />
+            <marker date="1518266629129" expanded="true" signature="1873:1929" ph="SELECT * FRO... users" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/crear.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="50" column="8" lean-forward="false" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="8" />
+          <folding>
+            <marker date="1518265782577" expanded="true" signature="912:1125" ph="INSERT INTO `users`... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contenido/cambiar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="23" column="73" lean-forward="false" selection-start-line="23" selection-start-column="73" selection-end-line="23" selection-end-column="73" />
+          <folding>
+            <marker date="1518266286493" expanded="true" signature="462:533" ph="UPDATE `users`... " />
+            <marker date="1518266286493" expanded="true" signature="601:665" ph="UPDATE `users`... " />
           </folding>
         </state>
       </provider>

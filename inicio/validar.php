@@ -20,7 +20,7 @@ if(isset($_GET['usuario'])){
     //echo $user;
 }
 else{
-    echo "fallo";
+    //echo "fallo";
 }
 
 if(isset($_POST['pass'])){
@@ -36,7 +36,7 @@ if(isset($_GET['pass'])){
     //echo $psw;
 }
 else{
-    echo "fallo";
+    //echo "fallo";
 }
 
 $con = mysqli_connect("localhost", "manuel","scout950911", "cuentas");
@@ -52,7 +52,8 @@ if ($con) {
     $respuesta = mysqli_fetch_all($resultado);
 
     if ($respuesta) {
-        if ($respuesta[0][2] == $psw) {
+        $hash = $respuesta[0][2];
+            if (password_verify($psw, $hash)) {
             session_start();
             $_SESSION['username'] = $user;
             $_SESSION['super-id'] = $respuesta[0][0];

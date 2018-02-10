@@ -20,7 +20,8 @@ if (isset($_POST['confContraseña'])){
 
 
 if ($nueva == $confirma){
-    $cambio = mysqli_query($con, "UPDATE `users` SET `pass` = '" . $nueva . "' WHERE `users`.`id_user` = " . $_SESSION['super-id'] . ";");
+    $nhash = password_hash($nueva, PASSWORD_BCRYPT);
+    $cambio = mysqli_query($con, "UPDATE `users` SET `pass` = '" . $nhash . "' WHERE `users`.`id_user` = " . $_SESSION['super-id'] . ";");
     $anular = mysqli_query($con, "UPDATE `users` SET `second_pass` = '' WHERE `users`.`id_user` = " . $_SESSION['super-id'] . ";");
     echo "<script>alert('Se cambio correctamente la contraseña'); window.location.href='../home/home.php'</script>";
 }else{
