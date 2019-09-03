@@ -1,17 +1,19 @@
 <?php
 session_start();
-$con = mysqli_connect("localhost", "manuel","scout950911", "cuentas");
-if ($con){
-    $resultado = mysqli_query($con, "SELECT * FROM `users` WHERE `user` LIKE '" . $_SESSION['user_correo'] . "'");
-    $respuesta = mysqli_fetch_all($resultado);
-    if ($respuesta){
-        $to = $respuesta[0][6];
+//$con = mysqli_connect("localhost", "manuel","scout950911", "cuentas");
+//if ($con){
+    //$resultado = mysqli_query($con, "SELECT * FROM `users` WHERE `user` LIKE '" . $_SESSION['user_correo'] . "'");
+    //$respuesta = mysqli_fetch_all($resultado);
+    //if ($respuesta){
+        //$to = $respuesta[0][6];
+        $to = "msscout11@gmail.com";
         $subject = "Reestablecer Contraseña";
-        $usuario = $respuesta[0][1];
-        $nombre = $respuesta[0][3];
-        $pass = $respuesta[0][7];
-    }
-}
+        //$usuario = $respuesta[0][1];
+        $usuario = "msarevalo";
+        $nombre = "Manuel";
+        $pass = "Prueba";
+    //}
+//}
 //$to = 'msscout11@gmail.com'; // note the comma
 // Subject
 //$subject = 'Pruebas';
